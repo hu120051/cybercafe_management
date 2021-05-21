@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Karaoke TV</title>
+</head>
+ <body background="{{ url_for('static', filename='images/background.jpg') }}"
+ style=" background-repeat:no-repeat ;
+background-size:100% 100%;
+background-attachment: fixed;">
+<style>
+    .button1 {
+    font-size: 18px;
+    font-family: 方正小标宋简体,serif;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 16px 32px;
+    text-align: center;
+    background-color: #0005ff;
+    color: black;    border: 0 solid #4CAF50;
+    border-radius:5px;
+        }
+    .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+        }
+div{
+     margin:auto auto; width:300px; height:100px; border:1px
+}
+    h1{
+    font-size: 100px;
+    font-family: Chiller,serif;
+    color: white;
+    position: relative;
+    top: 150px
+    }
+
+</style>
+
+    <div>
+        <a href="{{ url_for('userlogin') }}"><button class="button1" name="but1">客户登录</button></a>
+        <a href="{{ url_for('adminlogin') }}"><button class="button1" name="but2">管理员登陆</button></a>
+    </div>
+
+<h1 align="center">Welcome to Karaoke TV</h1>
+
+</div>
+</body>
+</html>
